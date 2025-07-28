@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const cta          = document.querySelector(".cta");
   
     const sequence = [
-      { el: h1,           text: "COOLERIZE",                                                                       speed: 100 },
-      { el: mainPara,     text: "(verb): To level up humans, ideas, and businesses - upgrading them to peak coolness.", speed: 20  },
-      { el: phoneticPara, text: "cool·er·ize /ˈkooləˌrīz/",                                                           speed: 50  },
+      { el: h1,           text: "COOLERIZE",                                                                       speed: 50 },
+      { el: mainPara,     text: "(verb): To level up humans, ideas, and businesses - upgrading them to peak coolness.", speed: 10  },
+      { el: phoneticPara, text: "cool·er·ize /ˈkooləˌrīz/",                                                           speed: 10  },
     ];
   
     // clear initial content and ensure CTA is hidden
