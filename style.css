@@ -413,6 +413,48 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@keyframes neonFlickerChoices {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  3% {
+    opacity: 0.8;
+  }
+
+  6% {
+    opacity: 1;
+  }
+
+  9% {
+    opacity: 0.5;
+  }
+
+  12% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 0.6;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  21% {
+    opacity: 0.4;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  27% {
+    opacity: 0.9;
+  }
+}
+
 .choices{
   display: flex;
   align-items: center;
@@ -423,7 +465,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 7vh;
   margin-top: 2vh;
   
-   /* never show any box‑shadow during that animation */
    box-shadow: none !important;
   transform: translateX(-100px);
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -438,7 +479,7 @@ h1, h2, h3, h4, h5, h6, p {
   transform: translateX(0);
   animation-play-state: running;
   pointer-events: auto;
-  animation: neonFlicker 3s infinite;
+  animation: neonFlickerChoices 3s infinite;
 }
 
 .choices p{
@@ -480,6 +521,7 @@ footer{
 @media only screen and (max-width:768px) {
   footer{
     width: 100%;
+    font-size: 3.2vw;
   }
 
   .choices{
