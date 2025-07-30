@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mainPara     = document.querySelector(".box-paragraph");
     const phoneticPara = document.querySelector(".tnr-paragraph");
     const cta          = document.querySelector(".cta");
+    const choices      = document.querySelector(".choices");
   
     const sequence = [
       { el: h1,           text: "COOLERIZE",                                                                       speed: 50 },
@@ -20,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
         cta.classList.add("visible");
         setTimeout(() => {
             cta.classList.add("animated")
+                choices.classList.add("visible");
+                choices.classList.remove("invisible");
         }, 1000);
         return;
       }

@@ -4,9 +4,9 @@ body {
   overflow: hidden;
   background-color: #D1D0D0;
     background-image:
-      linear-gradient(to right, #B3B3B3 1px, transparent 1px),
-      linear-gradient(to bottom, #B3B3B3 1px, transparent 1px);
-    background-size: 80px 80px;
+      linear-gradient(to right, #FF4C1B 1px, transparent 1px),
+      linear-gradient(to bottom, #FF4C1B 1px, transparent 1px);
+    background-size: 120px 120px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -30,13 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   justify-content: center;
   min-height: 100dvh;
-  align-items: center;
   width: 50%;
-}
-
-.left-main img {
-  width: 50%;
-  height: auto;
 }
 
 .right-main {
@@ -51,8 +45,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Helvetica, sans-serif;
   color: #FF4C1B;
   text-align: center;
-  font-size: 130px;
-  height: 150px;
 }
 
 .box-paragraph {
@@ -60,19 +52,18 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FF4C1B;
   background-color: rgba(0, 0, 0, 0.5);
   font-weight: 700;
+  font-size: 7vw;
   padding: 0 5px;
   aspect-ratio: 284 / 110;
-  font-size: 66px;
-  width: 800px;
+  width: 100%;
 }
 
 .tnr-paragraph {
   font-family: 'Times New Roman', Times, serif;
   color: #FF4C1B;
   font-weight: 700;
+  font-size: 6.5vw;
   font-style: italic;
-  font-size: 50px;
-  height: 57px;
 }
 
 .cta {
@@ -82,13 +73,9 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: 700;
-  padding: 15px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 4.5vw;
+  padding: 10px 0;
   text-decoration: none;
-  font-size: 36px;
-  width: 790px;
 }
 
 .left-main img {
@@ -214,14 +201,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
 
   body {
     background-color: #D1D0D0;
     background-image:
-      linear-gradient(to right, #B3B3B3 1px, transparent 1px),
-      linear-gradient(to bottom, #B3B3B3 1px, transparent 1px);
-    background-size: 80px 80px;
+      linear-gradient(to right, #FF4C1B 1px, transparent 1px),
+      linear-gradient(to bottom, #FF4C1B 1px, transparent 1px);
+    background-size: 30px 30px;
 
   }
 
@@ -237,7 +224,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     gap: 0px;
     width: 90%;
-    max-width: 430px;
+    max-width: 427px;
     aspect-ratio: 430 / 725;
     justify-content: flex-end;
     align-items: center;
@@ -273,6 +260,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     font-size: 7vw;
     padding: 0 5px;
+    max-width: 438px;
   }
 
   .tnr-paragraph {
@@ -302,8 +290,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
+
+
 @media only screen and (min-width: 500px) {
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 768px) {
+
     .right-main-inner h1 {
       font-family: Helvetica, sans-serif;
       color: #FF4C1B;
@@ -330,6 +321,7 @@ h1, h2, h3, h4, h5, h6, p {
       aspect-ratio: 303 / 27;
     }
 
+
     .cta {
       background-color: #FF4C1B;
       color: white;
@@ -337,11 +329,183 @@ h1, h2, h3, h4, h5, h6, p {
       text-align: center;
       font-family: Helvetica, sans-serif;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 20.8px;
       width: 100%;
       padding: 10px 0;
       text-decoration: none;
     }
   }
+}
 
+@media only screen and (min-width:768px) {
+  .right-main-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 100%;
+    aspect-ratio: 430 / 725;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .left-main {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .left-main img{
+    height: 100%;
+  }
+
+  .right-main {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 5;
+  }
+
+  h1{
+    font-size: 10vh;
+  }
+
+  .box-paragraph{
+    font-size: 4.7vh;
+
+  }
+
+  .tnr-paragraph{
+    font-size: 4.5vh;
+    width: 100%;
+    height: 6vh;
+  }
+
+  .cta{
+    font-size: 3vh;
+    width: 100%;
+    padding: 1.5vh 0;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    background-color: gray;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: white;
+    padding: 1vh 0;
+    z-index: 10;
+    font-size: 2.3vh;
+    aspect-ratio: 22.2 / 1;
+    height: 3vh;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.choices{
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  color: #FF4C1B;
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 7vh;
+  margin-top: 2vh;
+  
+   /* never show any box‑shadow during that animation */
+   box-shadow: none !important;
+  transform: translateX(-100px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.choices.invisible{
+  visibility: hidden;
+}
+
+.choices.visible {
+  transform: translateX(0);
+  animation-play-state: running;
+  pointer-events: auto;
+  animation: neonFlicker 3s infinite;
+}
+
+.choices p{
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+
+.choices img{
+  height: 4.5vh;
+  margin-top: -2vh;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  background-color: gray;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  padding: 1vh 0;
+  z-index: 10;
+  font-size: 2.3vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@keyframes shaking {
+  from{
+    transform: rotate(-1deg);
+  }
+  50%{
+    transform: rotate(1deg);
+  }
+  to{
+    transform: rotate(-1deg);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  footer{
+    width: 100%;
+  }
+
+  .choices{
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .choices p{
+    font-size: 4vw;
+  }
+
+  .choices img{
+    height: 8vw;
+    margin-top: -2vw;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  @media only screen and (max-width: 768px) {
+    .choices p{
+      font-size: 19.8px;
+    }
+
+    .choices img{
+      height: 39px;
+      margin-top: -15px;
+    }
+  }
 }
